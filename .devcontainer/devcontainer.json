@@ -1,0 +1,17 @@
+{
+  "name": "Bitcoin from Scratch (interactive)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
+  "postCreateCommand": "npm ci && pip install jupyter-server ipykernel ecdsa",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "Book preview", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-toolsai.jupyter", "ms-python.python", "executablebooks.myst-highlight"]
+    }
+  }
+}

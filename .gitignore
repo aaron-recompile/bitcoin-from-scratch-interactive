@@ -1,0 +1,5 @@
+_build/
+node_modules/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

@@ -1,0 +1,58 @@
+version: 1
+project:
+  id: bitcoin-from-scratch-interactive
+  title: Bitcoin from Scratch
+  subtitle: Build your own Bitcoin chain, from a single byte to a working network
+  description: An interactive book. Eighteen chapters that build Bitcoin with nothing but the Python standard library, every snippet runnable in your browser.
+  authors:
+    - name: Aaron Zhang
+  github: https://github.com/aaron-recompile/bitcoin-from-scratch-interactive
+  license:
+    content: CC-BY-NC-SA-4.0
+    code: MIT
+  keywords: [bitcoin, cryptography, proof-of-work, consensus, python]
+  # Code cells run in the reader's browser (Pyodide), no server needed.
+  jupyter:
+    lite: true
+  toc:
+    - file: index.md
+    - file: book/ch00-prologue.md
+    - file: running-the-code.md
+    - title: "Part I · Bricks: the cryptographic floor"
+      children:
+        - file: book/ch01-bytes-hash-commitment.ipynb
+        - file: book/ch02-finite-field-ecc-pubkey.ipynb
+        - file: book/ch03-signatures-ecdsa.ipynb
+    - title: "Part II · Retracing the ancestors"
+      children:
+        - file: book/ch04-hash-chain.ipynb
+        - file: book/ch05-proof-of-work.ipynb
+    - title: "Part III · The house: building a chain"
+      children:
+        - file: book/ch06-transactions-doublespend.ipynb
+        - file: book/ch07-blocks-consensus.ipynb
+        - file: book/ch08-incentives-issuance.ipynb
+        - file: book/ch09-forks-upgrades.ipynb
+    - title: "Part IV · Surviving the long run"
+      children:
+        - file: book/ch10-fees-difficulty.ipynb
+        - file: book/ch11-merkle-tree.ipynb
+        - file: book/ch12-mempool-fees-confirmations.ipynb
+        - file: book/ch13-secp256k1.ipynb
+    - title: "Part V · Toward real engineering"
+      children:
+        - file: book/ch14-script-vm.ipynb
+        - file: book/ch15-wallet-hd-keys.ipynb
+        - file: book/ch16-hardware-signer.ipynb
+        - file: book/ch17-docker-network.md
+        - file: book/ch18-script-safety-limits.ipynb
+    - title: Appendices
+      children:
+        - file: book/appendix-a-crypto-map.md
+        - file: book/appendix-b-quantum.md
+        - file: book/appendix-c-checksig-csfs.md
+site:
+  template: book-theme
+  options:
+    folders: true
+    logo_text: Bitcoin from Scratch

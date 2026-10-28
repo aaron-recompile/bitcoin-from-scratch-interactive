@@ -1,0 +1,14 @@
+{
+  "name": "bitcoin-from-scratch-interactive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "myst start",
+    "build": "myst build --html --execute",
+    "test:browser-python": "node tools/pyodide_test.mjs book/*.ipynb"
+  },
+  "devDependencies": {
+    "mystmd": "1.12.0",
+    "pyodide": "0.27.7"
+  }
+}
