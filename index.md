@@ -3,6 +3,12 @@ title: Bitcoin from Scratch
 subtitle: Build your own Bitcoin chain
 ---
 
+```{image} images/cover.jpg
+:alt: Bitcoin from Scratch cover
+:width: 420px
+:align: center
+```
+
 Eighteen chapters. No libraries. From a single byte to a network running across several machines.
 
 Everything uses only the Python standard library. No Bitcoin libraries, no black-box APIs,
